@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- модалка вибору кольору для текста -->
+    <div class="modal_color_picker">
+        <div class="modal_1">
+            <div class="header">
+                <h1>Choose text color</h1>
+                <i class="fas fa-times close"></i>
+            </div>
+            <hr>
+            <div class="colors_wrapper">
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+                <div class="color_block"></div>
+            </div>
+        </div>
+    </div>
+    <!-- модалка вибору кольору для текста -->
+
+    <!-- модальне вікно вибору кольору або зображення фона -->
+    <div class="modal_bacground_picker">
+        <div class="modal_2">
+            <div class="header">
+                <h1>Choose bacground color or image</h1>
+                <i class="fas fa-times close"></i>
+            </div>
+            <div class="navigation_bacground_style_wrapper">
+                <div class="section colors" id="active_nav">Colors</div>
+                <div class="section images">Images</div>
+                <div class="section files">Files</div>
+            </div>
+            <div class="bacground_colors_wrapper">
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+                <div class="color_block_bacground"></div>
+            </div>
+
+            <div class="bacground_image_wrapper">
+                <div class="image_block_bacground"></div>
+                <div class="image_block_bacground"></div>
+                <div class="image_block_bacground"></div>
+                <div class="image_block_bacground"></div>
+                <div class="image_block_bacground"></div>
+                <div class="image_block_bacground"></div>
+            </div>
+
+            <div class="bacground_file_wrapper">
+                <input type="file" id="change_file" accept="jpeg,jpg,png,gif">
+            </div>
+        </div>
+    </div>
+    <!-- модальне вікно вибору кольору або зображення фона -->
+
+    <!-- модальне вікно для логінування -->
+    <div class="modal_login">
+        <div class="modal_3">
+            <div class="header">
+                <h1>Sing In</h1>
+                <i class="fas fa-times close"></i>
+            </div>
+            <hr>
+            <div class="login_form_wrapper">
+                <input type="text" placeholder="Login here.." id="login">
+                <input type="password" placeholder="Password here.." id="password">
+                <div class="error_wrapper">
+                    <p class="empty_value">Value is empty</p>
+                    <p class="not_correct_value">Please check your login or password</p>
+                </div>
+                <input type="submit" value="Sign In" id="sign_in">
+            </div>
+
+            <div class="sign_out_form_wrapper">
+                <button class="sign_out">Sign Out</button>
+            </div>
+        </div>
+    </div>
+    <!-- модальне вікно для логінування -->
+
+    <!-- блок при загрузці сторінки (домашня сторінка) -->
+    <div class="wrapper home">
+        <div class="menu_wrapper_bacground">
+            <div class="menu_wrapper">
+                <div class="code disabled"><i class="fas fa-code"></i></div>
+                <div class="text_decotation_wrapper">
+                    <div class="bold"><i class="fas fa-bold"></i></div>
+                    <div class="italic"><i class="fas fa-italic"></i></div>
+                    <div class="underline"><i class="fas fa-underline"></i></div>
+                    <div class="strikethrough"><i class="fas fa-strikethrough"></i></div>
+                </div>
+                <div class="text_align_wrapper">
+                    <div class="align_left"><i class="fas fa-align-left"></i></div>
+                    <div class="align_center"><i class="fas fa-align-center"></i></div>
+                    <div class="align_right"><i class="fas fa-align-right"></i></div>
+                </div>
+                <div class="font_wrapper">
+                    <div class="font_family_wrapper">
+                        <i class="fas fa-font"></i>
+                        <select class="font_family">
+                            <option style="font-family: Arial;">Arial</option>
+                            <option style="font-family: Georgia;">Georgia</option>
+                            <option style="font-family: Impact;">Impact</option>
+                            <option style="font-family: Tahoma;">Tahoma</option>
+                            <option style="font-family: Time New Roman;">Time New Roman</option>
+                            <option style="font-family: Verdana;">Verdana</option>
+                        </select>
+                    </div>
+                    <div class="font_size_wrapper">
+                        <i class="fas fa-text-height"></i>
+                        <select class="font_size">
+                            <option style="font-size: 12px;">12px</option>
+                            <option style="font-size: 14px;">14px</option>
+                            <option style="font-size: 16px;">16px</option>
+                            <option style="font-size: 18px;">18px</option>
+                            <option style="font-size: 20px;">20px</option>
+                            <option style="font-size: 22px;">22px</option>
+                            <option style="font-size: 25px;">25px</option>
+                            <option style="font-size: 30px;">30px</option>
+                        </select>
+                    </div>
+                    <div class="text_color"><i class="fas fa-palette"></i></div>
+                    <div class="bacground_image"><i class="fas fa-image"></i></div>
+                </div>
+                <div class="login"><i class="fas fa-lock replacement"></i></div>
+            </div>
+        </div>
+
+        <div class="area_wrapper">
+            <div id="textarea"></div>
+        </div>
+    </div>
+    <!-- блок при загрузці сторінки (домашня сторінка) -->
+
+    <!-- модалка створення таблиці -->
+    <div class="modal_create_table">
+        <div class="modal_4">
+            <div class="header">
+                <h1>Create table</h1>
+                <i class="fas fa-times close"></i>
+            </div>
+            <hr>
+            <div class="table_wrapper">
+                <div class="left_table_block">
+                    <p>Count TR</p>
+                    <input type="number" placeholder="Type here.." id="count_tr">
+                    <p>Width of TD</p>
+                    <input type="number" placeholder="Type here.." id="width_td">
+                    <p>Width of border</p>
+                    <input type="number" placeholder="Type here.." id="width_border_table">
+                    <p class="invalid_value">invalid value</p>
+                    <input type="submit" value="Reset" id="reset_create_table">
+                </div>
+                <div class="right_table_block">
+                    <p>Count TD</p>
+                    <input type="number" placeholder="Type here.." id="count_td">
+                    <p>Height of TD</p>
+                    <input type="number" placeholder="Type here.." id="height_td">
+                    <div class="style_border_table">
+                        <div class="style_border_text">
+                            <p>Style of border</p>
+                            <p>Color of border</p>
+                        </div>
+                        <div class="selection_wrapper">
+                            <select id="style_border">
+                                <option value="Choose" selected disabled>Choose</option>
+                                <option value="dotted">dotted</option>
+                                <option value="dashed">dashed</option>
+                                <option value="solid">solid</option>
+                                <option value="double">double</option>
+                                <option value="groove">groove</option>
+                                <option value="ridge">ridge</option>
+                                <option value="inset">inset</option>
+                                <option value="outset">outset</option>
+                            </select>
+                            <select id="color_border">
+                                <option value="Choose" selected disabled>Choose</option>
+                                <option value="black">black</option>
+                                <option value="red">red</option>
+                                <option value="green">green</option>
+                                <option value="blue">blue</option>
+                                <option value="yellow">yellow</option>
+                                <option value="white">white</option>
+                                <option value="gray">gray</option>
+                                <option value="pink">pink</option>
+                            </select>
+                        </div>
+                    </div>
+                    <input type="submit" value="Create table" id="create_table">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- модалка створення таблиці -->
+
+    <!-- модалка створення списку ol -->
+    <div class="modal_create_ol">
+        <div class="modal_5">
+            <div class="header">
+                <h1>Create OL</h1>
+                <i class="fas fa-times close"></i>
+            </div>
+            <hr>
+            <div class="ol_wrapper">
+                <p>Count li item:</p>
+                <input type="number" placeholder="Type here.." id="count_li_ol">
+                <p>Type mark of list:</p>
+                <select id="type_mark_ol">
+                    <option value="Choose" selected disabled>Choose OL type mark</option>
+                    <option value="1">1</option>
+                    <option value="I">I</option>
+                    <option value="i">i</option>
+                    <option value="A">A</option>
+                    <option value="a">a</option>
+                </select>
+                <p class="invalid_value">invalid value</p>
+                <div class="crate_ol_button_wrapper">
+                    <input type="submit" value="Reset" id="reset_create_ol">
+                    <input type="submit" value="Create list" id="create_ol">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- модалка створення списку ol -->
+
+    <!-- модалка створення списку ul -->
+    <div class="modal_create_ul">
+        <div class="modal_6">
+            <div class="header">
+                <h1>Create UL</h1>
+                <i class="fas fa-times close"></i>
+            </div>
+            <hr>
+            <div class="ul_wrapper">
+                <p>Count li item:</p>
+                <input type="number" placeholder="Type here.." id="count_li_ul">
+                <p>Type mark of list:</p>
+                <select id="type_mark_ul">
+                    <option value="Choose" selected disabled>Choose UL type mark</option>
+                    <option value="circle">circle</option>
+                    <option value="disc">disc</option>
+                    <option value="square">square</option>
+                </select>
+                <p class="invalid_value">invalid value</p>
+                <div class="crate_ul_button_wrapper">
+                    <input type="submit" value="Reset" id="reset_create_ul">
+                    <input type="submit" value="Create list" id="create_ul">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- модалка створення списку ul -->
+
+    <!-- блок редактора та добавлення контента (розширений блок) -->
+    <div class="wrapper extended">
+        <div class="menu_wrapper_bacground">
+            <div class="menu_wrapper_code">
+                <div class="choose_content_wrapper">
+                    <div class="save"><i class="fas fa-save"></i></div>
+                    <div class="table"><i class="fas fa-table"></i></div>
+                    <div class="list_ol"><i class="fas fa-list-ol"></i></div>
+                    <div class="list_ul"><i class="fas fa-list-ul"></i></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="area_wrapper">
+            <textarea id="editor">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            </textarea>
+        </div>
+    </div>
+    <!-- блок редактора та добавлення контента (розширений блок) -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
